@@ -100,10 +100,6 @@ if (hours<11){
 
 ## 배열
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/424ebb97-c917-4025-8bdb-7eba4a618e1c/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/424ebb97-c917-4025-8bdb-7eba4a618e1c/Untitled.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4af2e073-9271-46af-9165-1f3c361e849a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4af2e073-9271-46af-9165-1f3c361e849a/Untitled.png)
-
 ## while 반복문
 
 ```jsx
