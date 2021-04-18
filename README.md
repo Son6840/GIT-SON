@@ -1,4 +1,180 @@
 # 손상배 [201840119]
+## 2021-04-13
+>오늘 배운내용 요약<br>
+>요약 : 
+>## 익명 함수
+
+이름을 붙이지 않고 함수 생성
+함수를 호출하면 함수 내부의 코드 덩어리가 모두 실행
+
+let <변수 이름> = function(){ };
+
+```jsx
+let foo = function(){
+
+  console.log("첫줄");
+  console.log("둘쨰 줄");
+}
+
+foo();
+console.log(foo);
+//무명함수 ES6 이전에 사용
+```
+
+---
+
+### 선언적 함수
+
+```jsx
+function foo(){
+  console.log("첫줄");
+  console.log("둘째줄");
+}
+
+foo();
+//선언적 함수
+```
+
+---
+
+
+
+### 화살표 함수
+
+```jsx
+let foo = ()=>{
+
+  console.log("첫줄");
+  console.log("둘쨰 줄");
+}
+
+foo();
+console.log(foo);
+```
+
+---
+
+## 함수의 기본형태
+
+function <함수이름>(매개변수){
+
+<함수코드>
+
+return <리턴값> }
+
+```jsx
+function multiply(x,y){
+  return x*y;
+
+}
+console.log(multiply(10,20));
+console.log(multiply(20,6));
+```
+
+
+```jsx
+function print(x){
+
+  console.log(`"${x}"라고 말했습니다.`);
+}
+print("안녕하세요");
+```
+
+
+---
+
+## 리턴 함수
+
+```jsx
+function sum(min,max){
+  let output = 0;
+  for(let i =min;i<=max;i++){
+    output +=i;
+  }
+  return output;
+}
+
+console.log(sum(1,100));
+```
+
+***출력:* 5050**
+
+```jsx
+function print(name, count){
+  console.log(`${name}가 ${count}개 있습니다.`);
+
+}
+print("사과",10);
+```
+
+***출력: 사과가 10개 있습니다***
+
+---
+
+## 콜백 함수
+
+```jsx
+function call(cb){
+  for(let i =0;i<10;i++){
+    cb();
+  }
+}
+call(function(){
+  console.log("함수호출");
+})
+```
+
+
+---
+
+## 숫자 변환 함수
+
+parseInt() : 문자열을 정수로 반환
+
+parseFloat() : 정수를 문자열로 반환
+
+```jsx
+let A = "52"
+let B = "52.273"
+let C = "123가나다";
+
+console.log(parseInt(A));
+
+console.log(parseInt(B));
+console.log(parseFloat(B));
+
+console.log(parseInt(C));
+```
+
+
+
+---
+
+## 표준 내장 함수
+
+특정 시간 후에 또는 특정 시간마다 어떤 일을 할 때 사용
+
+시간은 밀리초로 지정. 1초 = 1000밀리초
+
+```jsx
+setTimeout(function(){
+  console.log("1초지남")
+},1000);
+```
+
+***1초지날때 한번출력***
+
+```jsx
+setInterval(()=>{
+  console.log("1초지남")
+},1000);
+```
+
+***1초 지날 때마다 출력***
+
+
+
+# 손상배 [201840119]
 ## 2021-04-06
 >오늘 배운내용 요약<br>
 >요약 : 
