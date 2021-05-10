@@ -1,4 +1,73 @@
 # 손상배 [201840119]
+## 2021-05-04
+>오늘 배운내용 요약<br>
+>요약 : 
+>
+
+### 객체배열
+
+```jsx
+let prducts ={
+	{name : '바나나',price:1200},
+	{name : '사과',price:2000},
+	{name : '배',price:3000},
+	{name : '고구마',price:700},
+	{name : '감자',price:600}
+};
+```
+
+### 함수를 외부로 내보낸 형태
+
+```jsx
+let products ={
+	{name : '바나나',price:1200},
+	{name : '사과',price:2000},
+	{name : '배',price:3000},
+	{name : '고구마',price:700},
+	{name : '감자',price:600}
+}
+//함수 선언
+function printProduct(product){
+	console.log(`${product.name}의 가격은 ${product.price}원 입니다`);
+}
+```
+
+### 생성자 함수를 사용한  객체생성
+
+```jsx
+//생성자 함수
+funtion Product(name,price){
+	this.name = name;
+	this.price = price;
+
+}
+//객체 생성
+let product = new Product('바나나',1200);
+
+console.log(Product);
+```
+
+### 프로토 타입
+
+```jsx
+fuction Product(name,price){
+	this.name = name;
+	this.price = price;
+}
+
+//프로토 타입에 메소드 선언
+
+Product.prototype.print = function(){
+	console.log(` ${product.name}의 가격은 ${product.price}원 입니다`)}
+
+//객체 생성
+let product = new Product('바나나', 1200);
+
+product.print();
+```
+
+
+# 손상배 [201840119]
 ## 2021-04-27
 >오늘 배운내용 요약<br>
 >요약 : 
