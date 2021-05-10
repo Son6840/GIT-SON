@@ -1,4 +1,54 @@
 # 손상배 [201840119]
+## 2021-04-27
+>오늘 배운내용 요약<br>
+>요약 : 
+>## 객체 접근
+
+product['제품명']
+
+product['유형']
+
+product['성분']
+
+product['원산지']
+
+---
+
+## 객체 기본
+
+```jsx
+let object ={
+	name:'바나나',
+	price:1200
+}
+console.log(object.name);
+console.log(object.price);
+
+```
+
+요소 :내부에 있는 값 하나하나
+
+속성 : 객체 내부에 있는 값 하나하나
+
+메소드 :객체의 속성중 자료형이 함수인 속성
+
+### 메소드 내의 this 키워드
+
+```jsx
+let object ={
+	name='바나나';
+	price='1200',
+	print:function(){
+		console.log(`${this.name}의 가격은 ${this.price}원 입니다 `)
+}
+
+};
+
+object.print();
+```
+
+
+# 손상배 [201840119]
 ## 2021-04-13
 >오늘 배운내용 요약<br>
 >요약 : 
