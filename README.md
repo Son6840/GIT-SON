@@ -20,6 +20,118 @@ console.log(typeof b);
 //boolean
 ```
 
+### Number 객체
+
+```jsx
+let number = new Number2(27.11122);
+
+console.log(number.toFixed(1));
+//출력값 27.1
+console.log(number.toFixed(4));
+//출력값 27.1112
+```
+
+### String 객체
+
+```jsx
+let string = 'Hello World!';
+
+if(string.indexOf('Hello')>=0){
+	console.log('hello JS')
+}
+```
+
+### Date 객체
+
+```jsx
+//현재 시간을 기반으로 Date객체 생성
+let dateA = new Date();
+console.log(dateA);
+
+//유닉스타임(1970년 1월 1일 0시 00분 00초부터 경과한 밀리초 )
+let dateB = new Date(692281800000);
+
+//문자열 기반 Date객체 생성
+let dateC = new Date("December 9, 1991 21:30:00");
+```
+
+### 시간 더하기
+
+```jsx
+let date = new Date();
+
+console.log(date);
+
+//시간더함
+date.setFullYear(date.getFullYear()+1);
+date.setMonth(date.getMonth()+2);
+date.setDate(date.getDate()+3);
+
+console.log(date);
+```
+
+### 배열
+
+```jsx
+let array =[{
+	name:'고구마',
+	price:1000
+},{
+	name:'감자',
+	price:500
+},{
+	name:'바나나',
+	price:1500
+}];
+```
+
+### 기본예외처리
+
+사전에 해당 데이터가 undefined인지 조건문으로 확인
+
+```jsx
+function callTenTimes(callback){
+	if (callback){
+		for(let i=0;i<10;i++){
+		callback();
+		}
+	}else {
+		console.log('매개변수 callback에 지정되지 않았습니다');
+	}
+}
+// 정상 실행
+callTenTimes(function(){console.log('안녕하세요')});
+
+//예외 발생
+callTentimes();
+```
+
+### 고급 예외 처리
+
+```jsx
+try{
+	//예외가 발생하면
+}catch(exception){
+	//catch문에서 처리
+} finally{
+	//무조건 실행
+}
+```
+
+### 강제 예외 발생
+
+throw error;
+
+```jsx
+//예외 객체를 만듬
+const error = new Error('메시지');
+error.name = '내마음대로 오류';
+error.message = '오류의 메시지';
+
+//예외 발생
+throw error;
+```
+
 ---
 # 손상배 [201840119]
 ## 2021-05-04
