@@ -1,4 +1,27 @@
 # 손상배 [201840119]
+## 2021-05-11
+>오늘 배운내용 요약<br>
+>요약 : 
+>
+## 기본 자료형
+
+```jsx
+let n = 273;
+let s = '안녕하세요';
+let b = true;
+
+console.log(typeof n);
+console.log(typeof s);
+console.log(typeof b);
+
+//출력
+//number
+//string
+//boolean
+```
+
+---
+# 손상배 [201840119]
 ## 2021-05-04
 >오늘 배운내용 요약<br>
 >요약 : 
