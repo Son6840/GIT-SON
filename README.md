@@ -1,4 +1,81 @@
 # 손상배 [201840119]
+## 2021-05-18
+>오늘 배운내용 요약<br>
+>요약 : 
+
+
+## process 객체의 속성과 event
+
+- Node.js는 process 전역 객체를 제공
+- process 객체는 프로세스 정보를 제공 및 제어 할 수 있는 객체
+
+**process 객체의 속성**
+
+     **속성                     설명**
+
+**env**                  컴퓨터의 환경정보
+
+**version**            Node.js 버전
+
+**versions**           Node.js와  종속된 프로그램 버전
+
+**arch**                  프로세스의 아키텍처
+
+**platform**            플랫폼     
+
+**process 객체의 메소드**
+
+**exit([exitCode = 0])**          프로그램을 종료
+
+**memoryUsage()**               메모리 사용 정보 객체를 리턴
+
+**uptime()**                             현재 프로그램이 싱행된 시간을 리턴
+
+**process 객체의 이벤트**
+
+**exit**                                  프로세스가 종료될 때 발생
+**uncaughtException**         예외가 일어날 때 발생
+
+**이벤트 매개 변수 : 이벤트 핸들러의 매개변수로 전달되는 매개변수**
+
+```jsx
+//exit 이벤트를 연결
+process.on('exit', (code)=>{
+	console.log('프로세스 종료');
+	console.log(`exit 이벤트 매개변수 : ${code}`);
+});
+
+//uncaughtException 이벤트 연결
+process.on(`uncaughtException`,(error)=>{
+	console.log('예외가 발생했습니다');
+	console.log(`uncaughtException 이벤트 매개변수: ${error}`);
+});
+
+//예외 강제 발생
+error.error.error();
+```
+
+***출력 :***
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61cd750d-59bb-475e-816e-3197037f4770/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61cd750d-59bb-475e-816e-3197037f4770/Untitled.png)
+
+[os 모듈](https://www.notion.so/os-bc803243edc94633b3cd8aa1e9a5e2a6)
+
+[url 모듈](https://www.notion.so/url-a9e1e2c4d6bd4e0fafe1cad99a6a921c)
+
+[File System 모듈](https://www.notion.so/File-System-7c041521a0364d7d955874494e7edc3d)
+
+[request 모듈](https://www.notion.so/request-c4c0489163d8406ea9365d6b97a940ad)
+
+[cheerio 모듈](https://www.notion.so/cheerio-06dfe3df70fa44df81bea13fa0d19991)
+
+[async 모듈](https://www.notion.so/async-05eee0a8015b4cecb837a57ab12fe855)
+
+
+
+---
+
+# 손상배 [201840119]
 ## 2021-05-11
 >오늘 배운내용 요약<br>
 >요약 : 
