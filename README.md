@@ -11,19 +11,19 @@
 
 **process 객체의 속성**
 
-     **속성                     설명**
+ >>속성                     설명
 
-**env**                  컴퓨터의 환경정보
+>>env                 컴퓨터의 환경정보
 
-**version**            Node.js 버전
+>>version              Node.js 버전
 
-**versions**           Node.js와  종속된 프로그램 버전
+>>versions           Node.js와  종속된 프로그램 버전
 
-**arch**                  프로세스의 아키텍처
+>>arch                프로세스의 아키텍처
 
-**platform**            플랫폼     
+>>platform            플랫폼     
 
-
+---
 
 **process 객체의 메소드**
 
