@@ -57,9 +57,7 @@ process.on(`uncaughtException`,(error)=>{
 error.error.error();
 ```
 
-***출력 :***
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61cd750d-59bb-475e-816e-3197037f4770/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61cd750d-59bb-475e-816e-3197037f4770/Untitled.png)
 
 [os 모듈](https://www.notion.so/os-bc803243edc94633b3cd8aa1e9a5e2a6)
 
