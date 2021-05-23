@@ -23,13 +23,15 @@
 
 **platform**            플랫폼     
 
+
+
 **process 객체의 메소드**
 
 **exit([exitCode = 0])**          프로그램을 종료
 
 **memoryUsage()**               메모리 사용 정보 객체를 리턴
 
-**uptime()**                             현재 프로그램이 싱행된 시간을 리턴
+**uptime()**                             현재 프로그램이 행된 시간을 리턴
 
 **process 객체의 이벤트**
 
