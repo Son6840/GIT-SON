@@ -1,4 +1,81 @@
 # 손상배 [201840119]
+## 2021-05-25
+>오늘 배운내용 요약<br>
+>요약 : 
+### express 모듈의 기본 메소드
+
+- express()  : 서버 애플리케이션 객체 생성
+- app.use() : 요청이 왔을 때 실행할 함수 지정
+- app.listen() : 서버 실행
+
+```jsx
+//모듈 추출
+const express = require('express');
+
+//서버생성
+const app = express();
+
+//request 이벤트 리스너 설정
+app.use((request, response)=>{
+	response.send('<h1>Hello Express</h1>')
+});
+
+//서버 실행
+app.listen(52273,() =>{
+	console.log('server running at http://127.0.0.1:52273');
+});
+
+```
+
+### 페이지 라우팅
+
+```jsx
+//모듈 추출
+const express = require('express');
+
+//서버생성
+const app = express();
+
+//request 이벤트 리스터 설정
+app.get('/page/:id',(request, response)=>{
+	//토큰 꺼냄
+	const id = request.params.id;
+	//응답
+	response.send(`<h1>${id}Page</h1>`);
+});
+
+//서버 실행
+app.listen(52273,() =>{
+	console.log('server running at http://127.0.0.1:52273');
+});
+
+```
+
+---
+
+### 미들 웨어
+
+**정적 파일 제공**
+
+- 웹페이지에서 변경되지 않는 요소(이미지,음악,자바스크립트 파일,스타일시트)를 쉽게 제공
+- public 폴더에는 이미지 음악 등 원하는 파일을 넣음
+- 현재  폴더에는 audio.mp3파일과 [image.pn](http://image.pn)g 파일을 넣음
+
+---
+
+### RESTful
+
+- **GET** :  ***/user*** → 모든 사용자 정보 조회
+- **POST** : ***/user*** → 사용자 추가
+- **GET** :  ***/user/:id*** →특정 사용자 조회
+- **PUT** : ***/user/:id*** →특정 사용자 정보를 수정
+- **DELETE** : ***/user/:id*** →특정 사용자 정보 제거
+
+
+
+---
+
+# 손상배 [201840119]
 ## 2021-05-18
 >오늘 배운내용 요약<br>
 >요약 : 
